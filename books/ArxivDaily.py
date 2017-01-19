@@ -12,7 +12,7 @@ def getBook():
 
 
 class ArxivDaily(BaseFeedBook):
-    title                 = u'Arxiv Daily'
+    title                 = u'ArxivDaily'
     description           = u'arXiv daily on CV and AI'
     language              = 'en-us'
     feed_encoding         = "utf-8"
@@ -22,7 +22,7 @@ class ArxivDaily(BaseFeedBook):
     # fulltext_by_readability = False
     oldest_article        = 1
     feeds = [
-            (u'cs.CV', 'http://export.arxiv.org/rss/cs.CV', True)
+            (u'cs.CV', 'http://export.arxiv.org/rss/cs.CV', True),
             (u'cs.AI', 'http://export.arxiv.org/rss/cs.AI', True)
            ]
 
