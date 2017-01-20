@@ -18,8 +18,8 @@ class ArxivDaily(BaseFeedBook):
     language              = "en"
     feed_encoding         = "utf-8"
     page_encoding         = "utf-8"
-    # mastheadfile = ""
-    # coverfile = ""
+    mastheadfile          = ""
+    coverfile             = ""
     # fulltext_by_readability = False
     # oldest_article        = 1
     feeds = [
