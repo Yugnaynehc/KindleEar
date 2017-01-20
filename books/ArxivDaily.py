@@ -38,7 +38,7 @@ class ArxivDaily(BaseFeedBook):
             # result = requests.get(url)
             result = urllib2.urlopen(url)
             content = result.read()
-            if result.get_code() == 200 and content:
+            if result.code == 200 and content:
                 content = content.decode(self.feed_encoding)
                 feed = feedparser.parse(content)
                 for e in feed['entries']:
